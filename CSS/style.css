@@ -1,0 +1,185 @@
+/* CsS reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* navigation */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative; /* for navbar bg */
+}
+#logo-img {
+  margin: 12px 36px;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+#navbar ul li {
+  display: flex;
+  font-size: 1.1rem;
+}
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 28px;
+  color: white;
+  border-radius: 10px;
+}
+#navbar ul li a:hover {
+  background-color: white;
+  color: black;
+}
+/* nav bg setting */
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.35;
+}
+/* end of navbar */
+/* Hero section */
+#hero{
+    display: flex;
+    flex-direction: column;
+    padding:12px 220px;
+    padding-bottom: 112px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 450px;
+    /* position: relative; */
+}
+/* hero image  */
+#hero::before {
+    content: "";
+    background:url('../Images/bg4.jpg') no-repeat center center/cover ;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+  }
+
+  #hero-header{
+      font-size: 2.5rem;
+      letter-spacing: .19rem;
+  }
+  
+  /* end of hero section  */
+/* services sections  */
+#services{
+  display: flex;
+  margin: 36px;
+  /* flex-wrap: wrap; */
+  /* border: 2px solid red; */
+
+}
+#services .box{
+  border: 2px solid rgb(48, 8, 8);
+  margin: 8px;
+  padding: 8px 36px;
+  border-radius: 10px;
+  background-color: rgb(241, 237, 227);
+}
+#services .box img{
+height: 90px;
+display: block;
+margin:auto ;
+padding-bottom: 12px;
+
+}
+/* client section  */
+.clients-container{
+  height:250px;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.clients-container::before{
+  content: "";
+  background:url('../Images/bg2.jpg') no-repeat center center/cover ;
+  position: absolute;
+  height: 33%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.55;
+}
+.client-item img{
+height: 80px;
+margin: 36px 60px;
+}
+/* end of clients  */
+/* contact us section  */
+#contact{
+  position: relative;
+}
+
+#contact::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .86;
+  background: url('../Images/bg3.jpg')  no-repeat center center/cover;
+}
+#contact-box{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+#contact-box input,textarea{
+  width: 100%;
+  padding: 12px;
+  font-size: 1.0rem;
+}
+#contact-box  label{
+  width: 100%;
+  /* padding: 12px; */
+  font-size: 1.1rem;
+  font-weight: 700
+}
+
+
+/* footer section  */
+footer{
+  background-color: black;
+  color: white;
+padding: 12px 24px;
+}
+
+/* utility class */
+#CTA{
+    padding: 12px 18px;
+    margin: 36px;
+    margin-left: 50px;
+    background-color: rgb(201, 64, 64);
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+.h-one{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .h-two{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.text-center{
+  text-align: center;
+}

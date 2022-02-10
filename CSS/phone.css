@@ -1,0 +1,28 @@
+/* navigation section  */
+#navbar{
+/* flex-direction: row; */
+}
+#navbar ul{
+flex-direction: column;
+}
+
+
+
+/* hero section  */
+
+#hero{
+
+#hero::before{
+  
+}
+/* services sectrion  */
+#services{
+    flex-direction: column;
+}
+#services .box{
+   
+}
+
+/* clients section  */
+
+/* contact section  */
