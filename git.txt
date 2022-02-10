@@ -1,0 +1,4 @@
+
+git remote add origin https://github.com/Ashikur540/Food-Delivery-website.git
+git branch -M main
+git push -u origin main
